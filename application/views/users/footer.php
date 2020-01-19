@@ -1,6 +1,6 @@
 <footer>
         <hr/>
-        &copy;stack Overflow 2018-19
+        &copy;stack Overflow 2019-20
     </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
       $(".btn-danger").click(function(){
         var tag = $(this).html();
         var tag_input = $("#tag").val().trim();
-  
+
         if(tag_input.length==0){
           $("#tag").val(tag);
         }else if(tag_input.search(tag)==-1){
@@ -28,7 +28,7 @@
               if(pos) {
                 tag_array.splice(pos,1);
                 $("#tag").val(tag_array.toString());
-                
+
               } else {
                 $("#tag").val(tag_input+", "+tag);
               }
